@@ -1,0 +1,148 @@
+.contact {
+  height: 100vh;
+  display: flex;
+  color: lightgray;
+  overflow: hidden;
+  text-align: center;
+  padding: 0px 10px;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-color: lightblue;
+  background-image: url("../images/header-background.jpg");
+}
+
+.contact > h3 {
+  /* --- Animation --- */
+  opacity: 0;
+  /* ----------------- */
+  margin: 20px;
+  margin-top: 50px;
+  letter-spacing: 3px;
+}
+
+.contact > form {
+  /* --- Animation --- */
+  opacity: 0;
+  /* ----------------- */
+  width: 50%;
+  height: 50%;
+  padding: 20px;
+  display: flex;
+  overflow: hidden;
+  max-width: 400px;
+  text-align: left;
+  margin: 40px 20px;
+  min-height: 315px;
+  border-radius: 1px;
+  flex-direction: column;
+  justify-content: flex-start;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.contact > form > label {
+  z-index: 3;
+  font-size: 11px;
+  font-weight: bold;
+  margin-bottom: 2px;
+  letter-spacing: 2px;
+}
+
+.contact > form > input {
+  width: 100%;
+  height: 28px;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  outline-style: none;
+  transition: 0.2s ease;
+  border: 1px solid rgba(0, 0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.contact > form > input:focus {
+  border-color: rgb(2, 39, 56);
+}
+.contact > form > textarea {
+  width: 100%;
+  height: 100%;
+  resize: vertical;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-bottom: 45px;
+  outline-style: none;
+  transition: 0.2s ease;
+  border: 1px solid rgba(0, 0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.contact > form > button {
+  right: 0px;
+  bottom: 0px;
+  width: 125px;
+  padding: 8px;
+  height: 35px;
+  display: flex;
+  color: white;
+  cursor: pointer;
+  margin: 15px 20px;
+  font-weight: bold;
+  border-radius: 3px;
+  position: absolute;
+  align-items: center;
+  transition: 0.2s ease;
+  justify-content: center;
+  border: 1px solid rgb(3, 57, 82);
+  background-color: rgb(22, 113, 155);
+}
+
+.contact > form > button:hover {
+  background-color: rgb(72, 121, 153);
+}
+
+.contact > form > button:focus {
+  outline-style: none;
+}
+
+.contact > form > button > .MuiSvgIcon-root {
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+}
+
+.contact__submitSpin > .MuiSvgIcon-root {
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.contact__submitDisabled {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  cursor: not-allowed;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 760px) {
+  .contact > form {
+    width: 90%;
+  }
+}
