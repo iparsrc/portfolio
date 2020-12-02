@@ -1,0 +1,26 @@
+.bottomArrow {
+  width: 35px;
+  bottom: 5vh;
+  height: 35px;
+  display: flex;
+  color: black;
+  position: absolute;
+  align-items: center;
+  border-radius: 100%;
+  outline-style: none;
+  justify-content: center;
+  border: 1px solid white;
+  background-color: white;
+  transition: background-color 0.2s ease-in;
+}
+
+.bottomArrow:hover {
+  cursor: pointer;
+  background-color: rgb(91, 203, 240);
+}
+
+@media screen and (max-width: 760px) {
+  .bottomArrow {
+    bottom: 2vh;
+  }
+}
