@@ -1,5 +1,6 @@
 // --- Core Modules ---
 import React, { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 // --- ReactJs Components ---
 import BottomArrow from "./BottomArrow";
 // --- CSS & Images ---
@@ -53,9 +54,15 @@ const Home = () => {
           </p>
         </div>
         <div className="home__bodyIcons">
-          <LinkedInIcon ref={homeBodyIconsLinkedInIcon} fontSize="large" />
-          <GitHubIcon ref={homeBodyIconsGithubIcon} fontSize="large" />
-          <TwitterIcon ref={homeBodyIconsTwitterIcon} fontSize="large" />
+          <a href="https://www.linkedin.com/in/parsa-akbari-1480751a8">
+            <LinkedInIcon ref={homeBodyIconsLinkedInIcon} fontSize="large" />
+          </a>
+          <a href="https://github.com/parsaakbari1209/">
+            <GitHubIcon ref={homeBodyIconsGithubIcon} fontSize="large" />
+          </a>
+          <a href="https://twitter.com/ParsaAkbari15/">
+            <TwitterIcon ref={homeBodyIconsTwitterIcon} fontSize="large" />
+          </a>
         </div>
         <BottomArrow nextPage="/about" delay="3" />
       </div>
